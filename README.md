@@ -1,4 +1,4 @@
-# Python Business Automation
+# Python Business Process Automation
 Python Business Automation is mainly focusing on using business process automation via python. By automating business process, reducing manual processes and increasing efficiency and accuracy. 
 
 ---
