@@ -35,6 +35,20 @@ When in strict mode, PyPDF2 quits when encountering this stream error and throws
 input = PdfFileReader([your file], strict = False)
 ```
 
+----------------------------------------------------
+#### Python Library Error handle (import fitz)
+
+```
+File "/home/malcolm/venvs/p3/lib/python3.8/site-packages/starlette/staticfiles.py", line 55, in __init__
+    raise RuntimeError(f"Directory '{directory}' does not exist")
+```
+The error lines quoted from __init__.py are not contained in PyMuPDF. They demonstrate that you have installed a package named fitz in the same Python where PyMuPDF resides. This cannot coexist with PyMuPDF which has a top-level name of fitz as well. The Solution is updating the python library pymupdf.
+
+```
+pip uninstall fitz
+pip install pymupdf
+```
+
 
 ---
 ## 2.Python Excel Report Automation via Outlook
